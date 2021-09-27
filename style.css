@@ -848,10 +848,10 @@ a {
   }
   aside {
     display: none;
-    width: 50vw;
+    width: 55vw;
     position: absolute;
     z-index: 1;
-    transition: ease-out 0.2s;
+    transition: all 0.5s;
     
   }
 
@@ -1025,5 +1025,10 @@ a {
 
   section {
     margin: 4rem 0.5rem 2rem 0.5rem;
+  }
+}
+@media only screen and (max-width: 4000px) and (min-width: 1800px) {
+  html{
+    font-size: 28px;
   }
 }
