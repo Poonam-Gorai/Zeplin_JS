@@ -719,13 +719,39 @@ a {
   margin: 0 0.5rem;
   border-left: 1px solid #979797;
 }
+ul {
+  position: relative;
+  display: flex;
+  padding: 0 0.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li {
+  list-style: none;
+  margin: 0 0.2rem;
+}
+
+ul li.list {
+  text-align: center;
+}
+ul li a {
+  display: block;
+  text-decoration: none;
+}
 
 .allPageNo {
   padding: 0 0.5rem;
 }
 
 .pageNumbersBtn {
-  margin-left: 0.5rem;
+  width: 1.2rem;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  padding: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Scroll bar css */
@@ -737,7 +763,9 @@ a {
 .selectGroups::-webkit-scrollbar {
   display: none;
 }
-
+#tableList {
+  flex-direction: row-reverse;
+}
 /* smothh scroll when next and prev button  */
 .hide{
   display: block;
@@ -1027,7 +1055,7 @@ a {
     margin: 4rem 0.5rem 2rem 0.5rem;
   }
 }
-@media only screen and (max-width: 4000px) and (min-width: 1800px) {
+@media only screen and (max-width: 4000px) and (min-width: 2000px) {
   html{
     font-size: 28px;
   }

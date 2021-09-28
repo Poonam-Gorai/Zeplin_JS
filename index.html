@@ -350,14 +350,22 @@
           </tbody>
         </table>
         <div class="bottomOptions">
-          <span class="showing"> Showing 10-20 </span>
-          <label for="goto" class="goto">Goto</label>
-          <input type="text" class="gotoInput" />
-          <div class="pageNumbers">
-            <button class="btn pageNumbersBtn"><span>
-                < </button>
-                  <span class="allPageNo">1 2 3 4...10</span>
-          </div>
+            <span class="showing">
+              Showing <span id="goto_lower"></span> -
+              <span id="goto_upper"></span>
+            </span>
+            <label for="goto" class="goto">Goto</label>
+            <input type="text" class="gotoInput" onkeyup="GoToPage(this.value)" />
+            <div class="pageNumbers">
+              <ul id="tableList">
+                <li>
+                  <a href="#" class="prev btn pageNumbersBtn" id="nextId">></a>
+                </li>
+                <li>
+                  <a href="#" class="next btn pageNumbersBtn" id="prevId"> < </a>
+                </li>
+              </ul>
+            </div>
         </div>
       </div>
     </section>
